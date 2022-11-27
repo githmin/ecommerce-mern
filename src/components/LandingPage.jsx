@@ -6,9 +6,9 @@ import LandingBody from "./LandingBody";
 const LandingPage = () => {
   return (
     <div>
-      <Header />
-      {/* <LandingBody />
-      <Footer /> */}
+      {/* <Header /> */}
+      <LandingBody />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -34,6 +34,9 @@ const MainCategoryDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 const MainCategoryImgDiv = styled.img`
   width: 400px;
@@ -50,6 +53,9 @@ const Div1 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const MainCategoryTitle = styled.h1``;
@@ -71,12 +77,22 @@ const NewArrivalsImg = styled.img`
   }
 `;
 
-const NewArrivalsHeader = styled.h1``;
+const NewArrivalsHeader = styled.h1`
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
 const NewArrivalsP = styled.p`
   margin-bottom: 50px;
+  @media screen and (max-width: 480px) {
+    /* display: none; */
+  }
 `;
 const ArrivalMainDiv = styled.div`
   display: flex;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const ArrivalDiv = styled.div`
