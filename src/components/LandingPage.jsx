@@ -7,8 +7,8 @@ const LandingPage = () => {
   return (
     <div>
       <Header />
-      <LandingBody />
-      <Footer />
+      {/* <LandingBody />
+      <Footer /> */}
     </div>
   );
 };

@@ -11,13 +11,25 @@ const Spacer = styled.div`
   opacity: 0.2;
 `;
 
+const Div = styled.div``;
+
 const TopNav = styled.div`
   display: flex;
   justify-content: space-around;
+  @media screen and (max-width: 480px) {
+    justify-content: inherit;
+    align-items: center;
+  }
 `;
 const TopNavF = styled.div`
   display: flex;
   opacity: 0.5;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 const TStyledP = styled.p`
@@ -34,6 +46,9 @@ const BottomNavF = styled.div`
   display: flex;
   gap: 30px;
   cursor: pointer;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const Brand = styled.div`
   font-size: 30px;
@@ -53,6 +68,9 @@ const CategoryNav = styled.div`
   gap: 25px;
   color: white;
   background-color: black;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const CategoryItem = styled.p`
   cursor: pointer;
@@ -64,7 +82,7 @@ const header = () => {
   return (
     <MainContainer>
       <TopNav>
-        <div></div>
+        <Div></Div>
         <TopNavF>
           <TStyledP>Contact us</TStyledP>
           <TStyledP>Returns & Refunds</TStyledP>
