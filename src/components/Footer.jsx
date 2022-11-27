@@ -46,7 +46,7 @@ const NavTitle = styled.p`
 `;
 
 const CopyrightContiner = styled.div`
-  font-size: 20px;
+  font-size: 15px;
   @media screen and (max-width: 480px) {
     font-size: 15px;
     display: flex;
