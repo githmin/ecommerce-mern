@@ -25,10 +25,17 @@ const Container = styled.div`
   display: flex;
 `;
 const MiniContainer = styled.div`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
   /* border: 1px solid red; */
 `;
 
-const CategoryNav = styled.div``;
+const CategoryNav = styled.div`
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
 const CategoryItem = styled.p`
   cursor: pointer;
   font-size: 12px;
@@ -40,6 +47,12 @@ const NavTitle = styled.p`
 
 const CopyrightContiner = styled.div`
   font-size: 20px;
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const CopyrightName = styled.a`
   text-decoration: none;
@@ -47,6 +60,9 @@ const CopyrightName = styled.a`
 const CPRSubContainer = styled.div`
   margin-top: 30px;
   margin-left: 30px;
+  @media screen and (max-width: 480px) {
+    margin: 10px;
+  }
 `;
 const Footer = () => {
   return (
@@ -100,10 +116,11 @@ const Footer = () => {
       <SpacerTwo />
       <CopyrightContiner>
         <CPRSubContainer>
-          &#169; {new Date().getFullYear()} React BrandX Frontend. By{" "}
-          <a href="https://github.com/githmin">
-            <CopyrightName>Githmin Jayawardhana</CopyrightName>
-          </a>
+          &#169; {new Date().getFullYear()} React BrandX Frontend. <br />
+          &nbsp; &nbsp; &nbsp;By{" "}
+          <CopyrightName href="https://github.com/githmin">
+            Githmin Jayawardhana
+          </CopyrightName>
         </CPRSubContainer>
       </CopyrightContiner>
     </MainContainer>
