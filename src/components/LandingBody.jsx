@@ -47,6 +47,10 @@ const MainCategoryImgDiv = styled.img`
   :hover {
     transform: scale(1.01);
   }
+  @media screen and (max-width: 480px) {
+    width: 350px;
+  height: 400px;
+  }
 `;
 
 const Div1 = styled.div`
