@@ -1,6 +1,6 @@
 # ecommerce-frontend-react
 
-ecommerce-frontend is a React based fully responsive frontend designed as part of a personal project which includes a fullstack e-commerce site using MERN stack.
+ecommerce-frontend is a React frontend designed as part of a personal project which includes a fullstack e-commerce site using MERN stack.
 
 - Styled components js framework was used for styling
 
